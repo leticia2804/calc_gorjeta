@@ -16,7 +16,7 @@
     --green-800: #00474b;
     --light-green: #26c2ae;
     --white: #ffffff;
-}
+} 
 
 body {
     background-color: var(--green-200);
@@ -31,6 +31,7 @@ header {
 main {
     background-color: var(--white);
     padding: 2rem;
+    border-radius: 1.5625rem 1.5625rem 0 0;
 }
 
 .conta,
@@ -97,4 +98,50 @@ main {
     border-radius: 0.3125rem;
     background-color: var(--green-800);
     color: var(--white);
+}
+
+.gorjeta #outra {
+    width: 100%;
+    background-color: var(--green-100);
+    color: var(--green-800);
+}
+
+.gorjeta #outra::placeholder {
+    color: var(--green-300);
+}
+
+.pessoas #erro {
+    display: none;
+}
+
+.resultados {
+    background-color: var(--green-800);
+    border-radius: 0.9375rem;
+    padding: 1.5rem; 
+}
+
+.resultados div {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultados p {
+    color: var(--green-400);
+    font-size: 0.8125;
+}
+
+.resultados p strong {
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.resultados div > strong {
+    color: var(--light-green);
+    font-size: 2rem;
+}
+
+.resultados .gorjeta-total {
+     margin-bottom: 1.25rem;
 }
