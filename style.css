@@ -34,7 +34,8 @@ main {
 }
 
 .conta,
-.gorjeta {
+.gorjeta,
+.pessoas {
     margin-bottom: 2rem;
 }
 
@@ -96,14 +97,4 @@ main {
     border-radius: 0.3125rem;
     background-color: var(--green-800);
     color: var(--white);
-}
-
-.gorjeta #outra {
-    width: 100%;
-    background-color: var(--green-100);
-    color: var(--green-800);
-}
-
-.gorjeta #outra::placeholder {
-    color: var(--green-300);
 }
