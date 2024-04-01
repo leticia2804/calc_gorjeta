@@ -1,5 +1,5 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Space Mono", serif;
@@ -18,8 +18,7 @@
     --white: #ffffff;
     --green-hover: #9fe8df;
     --danger: #e17457;
-} 
-
+}
 body {
     background-color: var(--green-200);
 }
@@ -27,13 +26,13 @@ body {
 header {
     display: flex;
     justify-content: center;
-    padding-block:2.8rem;
+    padding-block: 2.8rem;
 }
 
 main {
     background-color: var(--white);
     padding: 2rem;
-    border-radius: 1.5625rem 1.5625rem 0 0;
+    border-radius: 1.5625rem 1.5625rem 0 0 ;
 }
 
 .conta,
@@ -42,7 +41,6 @@ main {
     margin-bottom: 2rem;
 }
 
-.conta label,
 .gorjeta label,
 .pessoas label {
     color: var(--green-500);
@@ -52,13 +50,14 @@ main {
 .conta div,
 .pessoas .input-box {
     margin-top: 0.4rem;
-    background: var(--green-100);
+    background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-radius: 0.3125rem;
-}
+
+} 
 
 .conta input,
 .pessoas input {
@@ -74,7 +73,7 @@ main {
 
 .conta input::placeholder,
 .pessoas input::placeholder {
-        color: var(--green-300);
+    color: var(--green-300);
 }
 
 .conta:has(input:focus) div,
@@ -107,12 +106,12 @@ main {
     color: var(--white);
 }
 
-.gorjeta .botao-ativo {
+.gorjeta .botao-ativo{
     background-color: var(--light-green);
     color: var(--green-800);
 }
 
-.gorjeta input[type="button"]:hoover,
+.gorjeta input[type="button"]:hover,
 .resultados button:hover {
     background-color: var(--green-hover);
     cursor: pointer;
@@ -145,10 +144,11 @@ main {
     display: none;
 }
 
+
 .resultados {
     background-color: var(--green-800);
     border-radius: 0.9375rem;
-    padding: 1.5rem; 
+    padding: 1.5rem;
 }
 
 .resultados div div {
@@ -159,7 +159,7 @@ main {
 
 .resultados p {
     color: var(--green-400);
-    font-size: 0.8125;
+    font-size: 0.8125rem;
 }
 
 .resultados p strong {
@@ -173,7 +173,7 @@ main {
 }
 
 .resultados .gorjeta-total {
-     margin-bottom: 1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .resultados .total {
@@ -198,14 +198,14 @@ main {
     display: none;
 }
 
+@media(min-width: 920px) {
 
-@media(min-width: 900px) {
     body {
-       display:flex;
-       flex-direction: column;
-       min-height: 100svh;
-       justify-content: center;
-       gap: 5rem;
+        display: flex;
+        flex-direction: column;
+        min-height: 100svh;
+        justify-content: center;
+        gap: 5rem;
     }
 
     header {
@@ -216,7 +216,7 @@ main {
         display: flex;
         gap: 3rem;
         padding: 3rem;
-        border: 1.5625rem;
+        border-radius: 1.5625rem;
         max-width: 57.5rem;
         margin-inline: auto;
     }
@@ -225,18 +225,17 @@ main {
         width: 100%;
     }
 
+
     .gorjeta div {
-        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     .resultados {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-
         padding: 2.5rem;
     }
-
     .resultados div > strong {
         font-size: 3rem;
     }
